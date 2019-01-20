@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
 
 import './style.scss'
@@ -11,7 +10,7 @@ export default function Footer() {
       <div className="container header__container footer__container">
         <div className="logo">
           <NavLink exact activeClassName='active' to='/'>
-            <img src="/static/dist/assets/img/logo.png" alt="logo"/>
+            <img src="/assets/img/logo.png" alt="logo"/>
           </NavLink>
         </div>
         <ul className="references__list">

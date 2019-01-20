@@ -193,8 +193,8 @@ $(document).on('ready', function () {
 		    imgBlack = new Image(),
 		    point = 100;
 
-		imgWhite.src = '/static/landing/img/logo-white.png';
-		imgBlack.src = '/static/landing/img/logo.png';
+		imgWhite.src = '/landing/img/logo-white.png';
+		imgBlack.src = '/landing/img/logo.png';
 
 		$(window).on('scroll', function (e) {
 			if (elem.offset().top >= 100) {

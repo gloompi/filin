@@ -90,7 +90,7 @@ class RegisterForm extends Component{
         </NavLink>
         <div className="phone__contaier">
           <div className="phone__wrap">
-            <img src="/static/dist/assets/img/products/phone.png" alt="phone"/>
+            <img src="/assets/img/products/phone.png" alt="phone"/>
           </div>
         </div>
       </section>

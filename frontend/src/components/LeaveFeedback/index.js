@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 import Select from 'react-select'
@@ -13,9 +12,6 @@ import {loadAllCourses, postFeedback} from 'actions'
 import Loader from 'components/Loader'
 
 class LeaveFeedback extends Component{
-  static propTypes = {
-  }
-
   state = {
     value: '',
     correctForm: true,
@@ -26,12 +22,12 @@ class LeaveFeedback extends Component{
   }
 
   componentDidMount() {
-    const {loaded, loading, loadAllCourses, products} = this.props
+    const { loaded, loading, loadAllCourses } = this.props
     if (!loaded && !loading) loadAllCourses()
   }
 
   render(){
-    const {products, loading, loaded, response} = this.props
+    const { products, loaded } = this.props
     const { value, correctForm, showFB, showInst, showLinked, showVK } = this.state
     if(!loaded) return <Loader />
     const options = products.map(product => ({

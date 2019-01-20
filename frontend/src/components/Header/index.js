@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {NavLink} from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
 
@@ -35,7 +34,7 @@ export default class Header extends Component {
         <div className="container header__container" style={style}>
           <div className="logo">
             <NavLink exact activeClassName='active' to='/'>
-              <img src="/static/dist/assets/img/logo.png" alt="logo"/>
+              <img src="/assets/img/logo.png" alt="logo"/>
             </NavLink>
           </div>
           <nav className="mnu">

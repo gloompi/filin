@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import Cookies from 'js-cookie'
 
 import {postUser} from 'actions'
 
@@ -11,13 +9,13 @@ class Addon extends Component {
       <form 
         onSubmit={this.handleSubmit}
         className="addon" 
-        style={{backgroundImage: `url('/static/dist/assets/img/blog/addon-bg.png')`}}
+        style={{backgroundImage: `url('/assets/img/blog/addon-bg.png')`}}
         acceptCharset="utf-8" 
         action=""
         method="post">
         <img 
           className="centered" 
-          src="/static/dist/assets/img/main/amazon-black.png" 
+          src="/assets/img/main/amazon-black.png" 
           alt="amazon"/>
         <p>
           <strong> Узнайте как найти товар для успешного старта на Амазон.</strong>
